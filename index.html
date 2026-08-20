@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Online Examination System</title>
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Online Examination System</h1>
+
+      <p class="instruction">
+        <i>
+          Answer all the questions and submit the exam to view your result.
+        </i>
+      </p>
+
+      <!-- Timer -->
+
+      <div class="exam-info">
+        <span>
+          Time Left:
+          <b id="timer">05:00</b>
+        </span>
+      </div>
+
+      <!-- Exam Form -->
+
+      <form id="examForm">
+        <!-- Question 1 -->
+
+        <div class="question">
+          <h3>1. Which keyword is used to define a function in Python?</h3>
+
+          <label>
+            <input type="radio" name="q1" value="def" />
+            def
+          </label>
+
+          <label>
+            <input type="radio" name="q1" value="function" />
+            function
+          </label>
+
+          <label>
+            <input type="radio" name="q1" value="fun" />
+            fun
+          </label>
+
+          <label>
+            <input type="radio" name="q1" value="define" />
+            define
+          </label>
+        </div>
+
+        <!-- Question 2 -->
+
+        <div class="question">
+          <h3>
+            2. Which data type is used to store multiple items in an ordered
+            collection?
+          </h3>
+
+          <label>
+            <input type="radio" name="q2" value="list" />
+            List
+          </label>
+
+          <label>
+            <input type="radio" name="q2" value="integer" />
+            Integer
+          </label>
+
+          <label>
+            <input type="radio" name="q2" value="boolean" />
+            Boolean
+          </label>
+
+          <label>
+            <input type="radio" name="q2" value="float" />
+            Float
+          </label>
+        </div>
+
+        <!-- Question 3 -->
+
+        <div class="question">
+          <h3>3. Which symbol is used for a single-line comment in Python?</h3>
+
+          <label>
+            <input type="radio" name="q3" value="#" />
+            #
+          </label>
+
+          <label>
+            <input type="radio" name="q3" value="//" />
+            //
+          </label>
+
+          <label>
+            <input type="radio" name="q3" value="/" />
+            /
+          </label>
+
+          <label>
+            <input type="radio" name="q3" value="*" />
+            *
+          </label>
+        </div>
+
+        <!-- Question 4 -->
+
+        <div class="question">
+          <h3>
+            4. Which method is used to add an item to the end of a Python list?
+          </h3>
+
+          <label>
+            <input type="radio" name="q4" value="append" />
+            append()
+          </label>
+
+          <label>
+            <input type="radio" name="q4" value="add" />
+            add()
+          </label>
+
+          <label>
+            <input type="radio" name="q4" value="insert" />
+            insert()
+          </label>
+
+          <label>
+            <input type="radio" name="q4" value="push" />
+            push()
+          </label>
+        </div>
+
+        <!-- Question 5 -->
+
+        <div class="question">
+          <h3>5. Which function is used to display output in Python?</h3>
+
+          <label>
+            <input type="radio" name="q5" value="print" />
+            print()
+          </label>
+
+          <label>
+            <input type="radio" name="q5" value="display" />
+            display()
+          </label>
+
+          <label>
+            <input type="radio" name="q5" value="output" />
+            output()
+          </label>
+
+          <label>
+            <input type="radio" name="q5" value="show" />
+            show()
+          </label>
+        </div>
+
+        <!-- Submit Button -->
+
+        <button type="button" id="submitBtn" onclick="submitExam()">
+          Submit Exam
+        </button>
+      </form>
+
+      <!-- Result -->
+
+      <div id="result" class="result">
+        <h2>Your Result</h2>
+
+        <p id="score"></p>
+
+        <p id="percentage"></p>
+
+        <p id="status"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
